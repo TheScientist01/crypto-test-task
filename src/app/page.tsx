@@ -10,7 +10,7 @@ const HomePage = () => {
   return (
     <div className="mx-auto bg-white">
       <header className="flex justify-between py-7 w-[85%] mx-auto">
-        <div className="text-2xl font-bold">Logo</div>
+        <div className="text-2xl font-bold">CryptoKraken</div>
       </header>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[200px] gap-y-9 w-[90%] mx-auto mt-9">
         <div className="my-auto mx-auto md:ml-auto w-[400px]">
@@ -26,8 +26,8 @@ const HomePage = () => {
           </div>
           <div className="mt-6">
             <Link
-              href={"/chart/BTC"}
-              className={`rounded-lg py-2 px-5 bg-black text-white hover:shadow-card-100 duration-200`}
+              href={"/chart"}
+              className={`rounded-lg py-3 px-6 bg-black text-white font-semibold hover:shadow-card-100 duration-200`}
             >
               Go charts
             </Link>

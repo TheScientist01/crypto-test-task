@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import Chart from "react-apexcharts";
 
@@ -68,10 +69,10 @@ const CryptoChart: React.FC = () => {
       style={{ fontFamily: "Helvetica" }}
       className="flex min-h-[100vh] bg-white"
     >
-      <div className="w-[350px] py-9 pl-9 relative">
-        <div className="text-[27px] text-black font-semibold mb-5 ">
+      <div className="hidden md:block w-[350px] py-9 pl-9 relative">
+        <Link href={"/"} className="text-[27px] text-black font-semibold mb-5 ">
           CryptoKraken
-        </div>
+        </Link>
       </div>
       <div className="relative flex bg-gray-100 pt-[135px] pb-3 w-[99%] m-4 rounded-[25px] shadow-black shadow-[-10px_10px_50px_rgba(8,_112,_184,_0.7)]">
         <div className="absolute top-0 h-[40vh] w-full rounded-t-[25px] bg-black">
