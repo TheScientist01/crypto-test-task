@@ -9,18 +9,18 @@ import Link from "next/link";
 const HomePage = () => {
   return (
     <div className="mx-auto bg-white">
-      <header className="flex justify-between py-7 w-[85%] mx-auto">
+      <header className="flex justify-between py-7 w-[85%] mx-auto ">
         <div className="text-2xl font-bold">CryptoKraken</div>
       </header>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[200px] gap-y-9 w-[90%] mx-auto mt-9">
-        <div className="my-auto mx-auto md:ml-auto w-[400px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[200px] gap-y-9 w-[90%] mx-auto mt-9 ">
+        <div className="my-auto mx-auto md:ml-auto w-[400px] max-w-full ">
           <div className="font-bold text-lg text-transparent w-[200px] bg-clip-text bg-gradient-to-r from-purple-800 via-blue-400 to-pink-600">
             *30 Days free trial
           </div>
           <div className="text-[50px] text-black font-extrabold leading-[70px]">
             The world's most powerful crypto app
           </div>
-          <div className="text-gray-400 mt-5 text-lg">
+          <div className="text-gray-400 mt-5 text-lg max-w-[100vw]">
             Get the most accurate market data, alerts, conversions, indicators,
             tools and more - all within the same app.
           </div>
@@ -33,7 +33,7 @@ const HomePage = () => {
             </Link>
           </div>
         </div>
-        <div className="flex mx-auto rounded-[50px] w-[450px] h-[600px] bg-gradient-to-tr from-purple-900 via-blue-400 to-pink-600">
+        <div className="flex mx-auto rounded-[50px] max-w-full w-[450px] h-[600px] bg-gradient-to-tr from-purple-900 via-blue-400 to-pink-600">
           <Image
             src={mobile}
             alt="Mobile"
@@ -59,12 +59,11 @@ const HomePage = () => {
           label="Security by Default"
           text="Enable privacy mode and app locking to protect your data"
           image={research}
-          // image={"/analytics.png"}
         />
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[200px] gap-y-9 w-[90%] mx-auto">
-        <div className="flex justify-center mx-auto md:ml-auto w-[500px] h-[600px]">
+        <div className="flex justify-center mx-auto md:ml-auto w-full h-[600px]">
           <Image
             src={mobile}
             alt="Mobile"
@@ -78,7 +77,7 @@ const HomePage = () => {
           <div className="text-[50px] font-extrabold leading-[70px]">
             The world's most powerful crypto app
           </div>
-          <div className="text-gray-400 mt-5 text-lg">
+          <div className="text-gray-400 mt-5 text-lg max-w-[100vw]">
             Get the most accurate market data, alerts, conversions, indicators,
             tools and more - all within the same app.
           </div>
