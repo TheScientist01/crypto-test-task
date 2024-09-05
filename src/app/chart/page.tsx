@@ -2,7 +2,9 @@
 
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import Chart from "react-apexcharts";
+import dynamic from "next/dynamic";
+
+const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
 interface Candle {
   open: number;
