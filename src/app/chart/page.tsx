@@ -86,6 +86,8 @@ const CryptoChart: React.FC = () => {
           <div
             onMouseDown={handleTap}
             onMouseUp={handleUntap}
+            onTouchStart={handleTap}
+            onTouchEnd={handleUntap}
             className="flex justify-center items-center mx-auto w-[90%] [&>div]:w-full [&>div]:rounded-lg [&>div>div>svg]:rounded-xl"
           >
             <Chart
